@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barbershop LUTPAN</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Selamat datang di Barbershop Lutpan</h1>
+    </header>
+
+    <h2>Form Antrian</h2>
+    <form action="process_form.php" method="POST">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="phone">Nomor Telepon:</label>
+        <input type="text" id="phone" name="phone" required><br>
+
+        <label for="date">Tanggal:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="hairstyle">Model Potongan Rambut:</label>
+        <select id="hairstyle" name="hairstyle">
+            <option value="Model 1">Model 1</option>
+            <option value="Model 2">Model 2</option>
+            <option value="Model 3">Model 3</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+   
+    <h2>Contoh Model Potongan Rambut</h2>
+    <div id="hairstyles">
+        <div class="hairstyle">
+            <p>Model 1</p>
+            <img src="hairstyle1.jpg" alt="Model Potongan Rambut 1">
+        </div>
+        <div class="hairstyle">
+            <p>Model 2</p>
+            <img src="hairstyle2.jpg" alt="Model Potongan Rambut 2">
+        </div>
+        <div class="hairstyle">
+            <p>Model 3</p>
+            <img src="hairstyle3.jpg" alt="Model Potongan Rambut 3">
+        </div>
+    </div>
+</body>
+
+<footer>
+    &copy; 2023 Barbershop LUTPAN. All rights reserved.
+  </footer>
+</html>
